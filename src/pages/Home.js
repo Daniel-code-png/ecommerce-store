@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
-const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 import { useCart } from '../context/CartContext';
 import { useAuth } from '../context/AuthContext';
 import { ShoppingCart, Search, ShoppingBag, User, LogOut, Package } from 'lucide-react';
 import './Home.css';
+const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000';
 
 const Home = () => {
   const [products, setProducts] = useState([]);
